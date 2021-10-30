@@ -72,7 +72,7 @@ def detect_ellipse(image, contours, edges):
         if axisRatio < min_Axis_Ratio:
             continue
 
-        print(angle)
+        #print(angle)
 
         # reject if the angle is too large/vertical, the drone shouldn't be stable in those states
         # it looks like it calculates angle's origin from the vertical axis, not horizontal
@@ -239,7 +239,7 @@ while True:
     cv2.imshow("Detected Ellipses",frame)
      
     # show the accumulated edge map
-    cv2.imshow("Edge Map", accumEdged)
+    #cv2.imshow("Edge Map", accumEdged)
 
     # stop program if esc key is pressed
     key = cv2.waitKey(1)
